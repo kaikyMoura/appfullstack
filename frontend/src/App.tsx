@@ -1,12 +1,14 @@
 /*import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';*/
-import Header from "./components/Header/index";
+import Background from "./components/Main/index";
+import MainConteiner from "./components/Maincontainer/index"
+
 /*<ToastContainer/>*/
 function App() {
   return (
     <>
-    
-      <Header />
+      <Background />
+      
     </>
   )
 }
