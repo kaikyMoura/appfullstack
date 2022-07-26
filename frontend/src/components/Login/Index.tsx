@@ -1,15 +1,20 @@
 import "./styles.css"
-import Header from '../Header/index'
 
 function Login() {
     return (
         <>
-        <Header />
-            <input id="retangulo1" type="nome">
-                </input>
-            <input id="retangulo2" type="senha" />
-            <br/>
-            <p className="redfSenha">Esqueceu sua senha?</p>
+            <header>
+                <div className="log-container">
+                    <h1 className="welcome">WELCOME</h1>
+                    <input className="retangulo1"/>
+                    <input className="retangulo2"/>
+                    <br />
+                    <p className="redfSenha">Esqueceu sua senha?</p>
+                    <button type="button" className="btn-entrar">
+                        <p className="entrar">ENTRAR</p>
+                    </button>
+                </div>
+            </header>
         </>
     )
 }

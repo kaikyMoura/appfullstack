@@ -1,5 +1,5 @@
-import "./style.css"
-import logo from '../../assets/BOOKSHELVES.jpg'
+import "./styles.css"
+import logo from '../../assets/BOOK.png'
 
 function Header() {
     return(
