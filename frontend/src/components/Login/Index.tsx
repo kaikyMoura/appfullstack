@@ -1,4 +1,6 @@
 import "./styles.css"
+import React from 'react';
+// onclick={} 
 
 function Login() {
     return (
@@ -9,10 +11,12 @@ function Login() {
                     <input className="retangulo1"/>
                     <input className="retangulo2"/>
                     <br />
-                    <p className="redfSenha">Esqueceu sua senha?</p>
-                    <button type="button" className="btn-entrar">
+                    <a href={"."}><p className="redfSenha">Esqueceu sua senha?</p></a>
+                    <a href="http://localhost:5173/Tela1">
+                    <button type="button" className="btn-entrar"> 
                         <p className="entrar">ENTRAR</p>
                     </button>
+                    </a>
                 </div>
             </header>
         </>
