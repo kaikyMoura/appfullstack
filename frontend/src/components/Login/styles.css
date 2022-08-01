@@ -1,97 +1,32 @@
-.log-container {
-
-    background: #ffffff;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    height: 340px;
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: auto;
 }
 
-.welcome {
-    position: relative;
-    width: 105.28px;
-    height: 16px;
-    left: 185px;
-    top: 30px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 23px;
-
-    color: #242222;
+#login .form {
+    background-color: #f1f1f1;
+    width: 100%;
+    max-width: 480px;
+    padding: 0.5rem;
 }
 
-.retangulo1 {
-    box-sizing: border-box;
-
-    position: relative;
-    width: 255px;
-    height: 43px;
-    left: 130px;
-    top: 60px;
-
-    background: #F2F2F2;
-    border: 1px solid #BFBFBF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+#login .field {
+    padding-bottom: 0.5rem;
 }
 
-.retangulo2 {
-    box-sizing: border-box;
-
-    position: relative;
-    width: 255px;
-    height: 43px;
-    margin-left: 25.5%;
-    top: 120px;
-
-    background: #F2F2F2;
-    border: 1px solid #BFBFBF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+#login .field label {
+    display: block;
 }
 
-.redfSenha {
-
-    position: relative;
-    width: 106px;
-    height: 13px;
-    left: 270px;
-    top: 130px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    /* identical to box height */
-
-    text-decoration-line: underline;
-
-    color: #626262;
+#login .field input {
+    width: 100%;
 }
 
-
-.btn-entrar {
-    box-sizing: border-box;
-
-    position: relative;
-    top: 140px;
-    width: 190px;
-    height: 45px;
-    left: 160px;
-    bottom: 197px;
-
-    background: #0C0B0B;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-
-}
-
-.entrar {
-    margin-top: 6%;
-    color: #E7E5E5;
+#login .actions {
+    text-align: center;
+    margin-top: 0.5rem;
 }
