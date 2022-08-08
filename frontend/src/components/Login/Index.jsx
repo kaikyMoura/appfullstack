@@ -1,20 +1,25 @@
 import "./styles.css"
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+
+import { AuthContext } from '../../Context/auth';
 
 function Login() {
+
+    const { authenticated, login } = useContext(AuthContext);
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    function handleSubmit(e: { preventDefault: () => void; }) {
+    const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log("submit", { email, password : "secret" });
+        console.log("submit", { email, password});
+        login(email, password); // Integração com o contexto / api
     }
 
     return (
         <div id="login">
             <h1 className="title">WELCOME</h1>
+            <p>{String(authenticated)}</p>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label htmlFor="email">Email</label>
